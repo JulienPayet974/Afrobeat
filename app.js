@@ -4,9 +4,9 @@ const keys = Array.from(document.querySelectorAll('.key'));
 
 function playSound(e){
 
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const audio = document.querySelector(`audio[key="${e.key}"]`);
 
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[key="${e.key}"]`);
 
     //Si la touche n'est pas paramétrée alors stop
     if (!audio) return;
